@@ -4,34 +4,29 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-  // TODO: NELEMENTS should be N_ELEMENTS
-  int *b = new int[NELEMENTS];
+  int *b = new int[N_ELEMENTS];
 
-  // TODO: Add missing semicolon
-  std::cout << '1-100 ertekek duplazasa';
+  std::cout << "1-100 ertekek duplazasa" << std::endl;
 
-  // TODO: Add missing arguments
-  for (int i = 0;)
+  for (int i = 0; i < N_ELEMENTS; i++)
   {
-    b[i] = i * 2;
+    b[i] = (i + 1) * 2;
   }
 
-  // TODO: Add exit condition
-  for (int i = 0; i; i++)
+  for (int i = 0; i < N_ELEMENTS; i++)
   {
-    // TODO: Mising semicolon, value is getting logged
-    std::cout << "Ertek:"
+    std::cout << "Ertek: " << b[i] << std::endl;
   }
 
   std::cout << "Atlag szamitasa: " << std::endl;
 
-  int atlag;
+  int atlag = 0;
 
   // TODO: Replace ',' with a semicolon
-  for (int i = 0; i < N_ELEMENTS, i++)
+  for (int i = 0; i < N_ELEMENTS; i++)
   {
     // TODO: Add missing semicolon
-    atlag += b[i]
+    atlag += b[i];
   }
 
   atlag /= N_ELEMENTS;
